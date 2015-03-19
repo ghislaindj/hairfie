@@ -1,0 +1,728 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hairfie - Réservez votre coiffeur</title>
+    <meta name="description" content="Réservez votre coiffeur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="white">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="index.html" class="logo col-md-4"></a>
+              <nav class='col-md-8 pull-right'>
+                <ul>
+                  <li><a href="#">Inscription</a></li>
+                  <li><a href="#">Connexion</a></li>
+                  <li class="user">
+                    <div class="dropdown">
+                      <img src="images/placeholder-user-pp.jpg" alt="#">
+                      <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                        Natasha
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <li>
+                            <a href="salon.html">Salon</a>
+                          </li>
+                          <li>
+                            <a href="search.html">Search</a>
+                          </li>
+                          <li>
+                            <a href="hairfie.html">Hairfie</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- <li><a href="#" class="btn btn-red hide">Déclarez votre salon</a></li> -->
+                </ul>  
+              </nav>
+            </div>
+          </div>
+      </header>    
+      <div class="row">
+        <div class="searchbar col-sm-12">
+            <input type=search name=s placeholder='Où ?' class='col-sm-7' >
+            <input type=date  class='col-sm-2'/>
+            <a href="#" class='btn btn-red col-sm-2'>Trouvez votre coiffeur</a>          
+        </div>
+      </div>
+    </div>
+
+    <div class="container search" id="content">
+      <div class="row">
+
+        <div class="sidebar col-sm-4">
+          <section class='filter-recap'>
+            <h2>Ma séléction</h2>
+            <label class="checkbox-inline">
+              <input type="checkbox" align="baseline" value="" checked disabled="disabled">
+              <span></span>
+               Enfants
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" align="baseline" value="" checked disabled="disabled">
+              <span></span>
+               Brésilien
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" align="baseline" value="" checked disabled="disabled">
+              <span></span>
+               Foot
+            </label>
+          </section>
+
+          <h1>Filtrer la recherche</h1>
+          
+          <section>
+            <form action="">
+              <div>
+                <h2>Pour qui ?</h2>
+               <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Homme
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Femme
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Enfant
+                </label>
+              </div>
+              <div>
+               <h2>Ville</h2>
+                <div class="input-group">
+                  <div class="input-group-addon first"></div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Ville">
+                  <div class="input-group-addon"><a href="#" class="submit"></a></div>
+                  <!-- <img src="images/icon-search-glass.png" alt=""> -->
+                </div>
+              </div>
+              <div class='price'>
+                <h2>Fourchette de prix</h2>  
+                <div class="selectRange">
+                  <div id="rangeslider"></div>
+                  <p class="col-xs-6">10€</p>
+                  <p class="col-xs-6">1000€</p>
+                </div>
+              </div>
+              <div>
+               <h2>Style</h2>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Afro
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Asiatique
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Occidental
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Retro
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Décalé
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Classique
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                   Jeune
+                </label>
+              </div>
+              <div>
+               <h2>Cheveux</h2>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Raides
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Ondulés
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Bouclés
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Crépus
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Longs
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Courts
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Épais
+                </label>
+              </div>
+              <div>
+               <h2>Couleur</h2>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Blonde
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Brune
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Rousse
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Chatain
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="">
+                  <span></span>
+                  Gris
+                </label>
+
+              </div>
+            </form>
+          </section>
+        </div>
+
+
+        <div class="main-content col-md-8 col-sm-12">
+          <section class="search-content">
+            <div class="row">
+              <div class="col-xs-12 header-part">
+                <img src="images/placeholder-search-cover.jpg" alt="#" class="cover"/>
+                <h3>Le Marais</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              </div>
+            </div>
+            <div class="row">
+              <div role="tabpanel" class='col-xs-12 '>
+                <!-- Tabs - Nav -->
+                <div class="row">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active col-xs-4">
+                        <span class="icon-nav"></span>
+                        <a href="#salons" aria-controls="salons" role="tab" data-toggle="tab">Salons</a>
+                      </li>
+                      <li role="presentation" class="col-xs-4">
+                        <span class="icon-nav"></span>
+                        <a href="#adom" aria-controls="adom" role="tab" data-toggle="tab">Coiffeurs à domicile</a>
+                      </li>
+                      <li role="presentation" class="col-xs-4">
+                        <span class="icon-nav"></span>
+                        <a href="#hairfies" aria-controls="hairfies" role="tab" data-toggle="tab">Hairfies</a>
+                      </li>
+                    </ul>
+                </div>
+                
+                <!-- Tabs -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="salons">
+                    <div class="filters">
+                      <label for="date">
+                        <span>Date</span>
+                        <input type="date">
+                      </label>
+                      <label for="category" class="pull-right">
+                        <span>Trier par</span>
+                        <select name="category" id="category">
+                          <option value="" selected>Catégories</option>
+                          <option value="cat1">cat1</option>
+                          <option value="cat2">cat2</option>
+                          <option value="cat3">cat3</option>
+                        </select>
+                        <span class="caret"></span>
+                      </label>
+                    </div>
+
+                    <div class="row">
+                      <section class='col-xs-12'>
+                        <div class="col-xs-4">
+                          <img src="images/placeholder-salon-thumb.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                          <h3><a href="#">Alexandre de Paris</a></h3>
+                          <a href="#" class="address">1 rue Vivienne 75001 Paris</a>
+                          <p class="inline-promo"><span class="icon-promo">%</span>-30% dans tout le salon* <span class="black">&nbsp;&nbsp;prix moyen 50€</span></p>
+                          <div class="salon-hairfies">
+                            <ul>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li class='more'>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb-more.jpg" alt=""></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-red">Réserver</a>
+                          <div class="rating">
+                            <div class="note">
+                              <span>9,6</span>/10
+                            </div>
+                            <a href="#" class='small'>230 avis</a>
+                          </div>
+                        </div>
+                      </section>
+                      <section class='col-xs-12'>
+                        <div class="col-xs-4">
+                          <img src="images/placeholder-salon-thumb.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                          <h3><a href="#">Alexandre de Paris</a></h3>
+                          <a href="#" class="address">1 rue Vivienne 75001 Paris</a>
+                          <p class="inline-promo"><span class="icon-promo">%</span>-30% dans tout le salon* <span class="black">&nbsp;&nbsp;prix moyen 50€</span></p>
+                          <div class="salon-hairfies">
+                            <ul>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li class='more'>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb-more.jpg" alt=""></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-red">Réserver</a>
+                          <div class="rating">
+                            <div class="note">
+                              <span>9,6</span>/10
+                            </div>
+                            <a href="#" class='small'>230 avis</a>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane " id="adom">
+                    <div class="filters">
+                      <label for="date">
+                        <span>Date</span>
+                        <input type="date">
+                      </label>
+                      <label for="category" class="pull-right">
+                        <span>Trier par</span>
+                        <select name="category" id="category">
+                          <option value="" selected>Catégories</option>
+                          <option value="cat1">cat1</option>
+                          <option value="cat2">cat2</option>
+                          <option value="cat3">cat3</option>
+                        </select>
+                        <span class="caret"></span>
+                      </label>
+                    </div>
+                    <div class="row">
+                      <section class='col-xs-12'>
+                        <div class="col-xs-4">
+                          <img src="images/placeholder-adom-thumb.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                          <h3><a href="#">Sluty Suzy</a></h3>
+                          <a href="#" class="address">40 bvd de l'Hopital, 75001 Paris</a>
+                          <p class="inline-promo"><span class="icon-promo">%</span>-30% dans tout le salon* <span class="black">&nbsp;&nbsp;prix moyen 80€</span></p>
+                          <div class="salon-hairfies">
+                            <ul>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li class='more'>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb-more.jpg" alt=""></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-red">Réserver</a>
+                          <div class="rating">
+                            <div class="note">
+                              <span>9,6</span>/10
+                            </div>
+                            <a href="#" class='small'>230 avis</a>
+                          </div>
+                        </div>
+                      </section>
+                      <section class='col-xs-12'>
+                        <div class="col-xs-4">
+                          <img src="images/placeholder-adom-thumb.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                          <h3><a href="#">Sluty Suzy</a></h3>
+                          <a href="#" class="address">40 bvd de l'Hopital, 75001 Paris</a>
+                          <p class="inline-promo"><span class="icon-promo">%</span>-30% dans tout le salon* <span class="black">&nbsp;&nbsp;prix moyen 80€</span></p>
+                          <div class="salon-hairfies">
+                            <ul>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li class='more'>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb-more.jpg" alt=""></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-red">Réserver</a>
+                          <div class="rating">
+                            <div class="note">
+                              <span>9,6</span>/10
+                            </div>
+                            <a href="#" class='small'>230 avis</a>
+                          </div>
+                        </div>
+                      </section>
+                      <section class='col-xs-12'>
+                        <div class="col-xs-4">
+                          <img src="images/placeholder-adom-thumb.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                          <h3><a href="#">Sluty Suzy</a></h3>
+                          <a href="#" class="address">40 bvd de l'Hopital, 75001 Paris</a>
+                          <p class="inline-promo"><span class="icon-promo">%</span>-30% dans tout le salon* <span class="black">&nbsp;&nbsp;prix moyen 80€</span></p>
+                          <div class="salon-hairfies">
+                            <ul>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li class='more'>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb-more.jpg" alt=""></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-red">Réserver</a>
+                          <div class="rating">
+                            <div class="note">
+                              <span>9,6</span>/10
+                            </div>
+                            <a href="#" class='small'>230 avis</a>
+                          </div>
+                        </div>
+                      </section>
+                      <section class='col-xs-12'>
+                        <div class="col-xs-4">
+                          <img src="images/placeholder-adom-thumb.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8">
+                          <h3><a href="#">Sluty Suzy</a></h3>
+                          <a href="#" class="address">40 bvd de l'Hopital, 75001 Paris</a>
+                          <p class="inline-promo"><span class="icon-promo">%</span>-30% dans tout le salon* <span class="black">&nbsp;&nbsp;prix moyen 80€</span></p>
+                          <div class="salon-hairfies">
+                            <ul>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
+                              </li>
+                              <li class='more'>
+                                <a href="#"><img src="images/placeholder-hairfie-thumb-more.jpg" alt=""></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-red">Réserver</a>
+                          <div class="rating">
+                            <div class="note">
+                              <span>9,6</span>/10
+                            </div>
+                            <a href="#" class='small'>230 avis</a>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="hairfies">
+                      <section>
+                        <h3>Les Hairfies</h3>
+                        <div class="salon-hairfies hairfies row">
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  pcoiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-red">Charger plus de Hairfies</a>
+                      </section>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <ul class="footer-links col-md-7">
+            <li class="col-sm-2"><a href="#">À propos</a></li>
+            <li class="col-sm-2"><a href="#">Presse</a></li>
+            <li class="col-sm-2"><a href="#">Blog</a></li>
+            <li class="col-sm-4"><a href="#">Conditions Générales</a></li>
+            <li class="col-sm-2"><a href="#" class="btn btn-red">Déclarez votre salon</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="hr col-sm-10 col-xs-10"></div>
+        </div>
+        <h4>Rejoignez-nous sur :</h4>
+        <div class="row">
+          <ul class="social-links col-md-3">
+            <li><a href="#" class='icon'>b</a></li>
+            <li><a href="#" class='icon'>a</a></li>
+            <li><a href="#" class='icon'>c</a></li>
+            <li><a href="#" class='icon'>x</a></li>
+            <li><a href="#" class='icon'>d</a></li>
+          </ul>
+        </div>
+        <p>© Hairfie, Inc.</p> 
+      </div>
+    </footer>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+
+        <!-- build:js scripts/main.js -->
+        <script src="bower_components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/hello.js"></script>
+        <!-- endbuild -->
+    
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $('#rangeslider').slider({
+          range: true,
+          min: 0,
+          max: 1000,
+          values: [ 200, 500 ],
+          slide: function( event, ui ) {
+            // $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
+          }
+        });
+        $('.dropdown-toggle').dropdown()
+      });
+    </script>
+        <!-- build:js scripts/vendor/bootstrap.js 
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+         endbuild -->
+</body>
+</html>

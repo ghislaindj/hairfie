@@ -1,0 +1,541 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hairfie - Réservez votre coiffeur</title>
+    <meta name="description" content="Réservez votre coiffeur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="white">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="index.html" class="logo col-md-4"></a>
+              <nav class='col-md-8 pull-right'>
+                <ul>
+                  <li><a href="#">Inscription</a></li>
+                  <li><a href="#">Connexion</a></li>
+                  <li class="user">
+                    <div class="dropdown">
+                      <img src="images/placeholder-user-pp.jpg" alt="#">
+                      <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                        Natasha
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <li>
+                            <a href="salon.html">Salon</a>
+                          </li>
+                          <li>
+                            <a href="search.html">Search</a>
+                          </li>
+                          <li>
+                            <a href="hairfie.html">Hairfie</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- <li><a href="#" class="btn btn-red hide">Déclarez votre salon</a></li> -->
+                </ul>  
+              </nav>
+            </div>
+          </div>
+      </header>    
+    </div>
+
+    <div id="carousel-salon" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators hide">
+        <li data-target="#carousel-salon" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-salon" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/placeholder-carousel-1.jpg" alt="...">
+          <!-- carousel-cation peut-être ajouté pour fournir du contenu supplémentaire à chaque slide
+          <div class="carousel-caption"></div> -->
+        </div>
+        <div class="item">
+          <img src="images/placeholder-carousel-2.jpg" alt="...">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-salon" role="button" data-slide="prev">
+        <span class="arrow arrow-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-salon" role="button" data-slide="next">
+        <span class="arrow arrow-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="container salon" id="content">
+      <div class="row">
+
+        <div class="main-content col-md-8 col-sm-12">
+          <section class="salon-info">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h1>Mario Lopez</h1>
+                  <h2>88 bis avenue Mozart, 75016, Paris.</h2>
+                </div>
+                <div class="col-sm-4 stars">
+                  <span class="star full"></span>
+                  <span class="star full"></span>
+                  <span class="star full"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <a href="#" class='avis'>23 avis</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="prix col-xs-12 col-sm-4">
+                  <p>
+                    <span class="glyphicon glyphicon-euro"></span>
+                    Homme <span>&nbsp;50€</span>&nbsp;-&nbsp;Femme <span>&nbsp;80€</span>
+                  </p>
+                </div>
+                <div class="horraires col-xs-12 col-sm-6">
+                  <p>
+                    <span class="green glyphicon glyphicon-time"></span>
+                    <span class="green opened">Ouvert Aujourd'hui</span>
+                    <span class="red closed hide">Fermé Aujourd'hui</span>
+                    <span>&nbsp;-&nbsp;<a href="" class="small">voir les détails</a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="tags col-xs-12">
+                  <p>Spécialités : 
+                  <a href="#" class="tag">Femme</a>
+                  <a href="#" class="tag">Femme</a>
+                  <a href="#" class="tag">Femme</a>
+                  <a href="#" class="tag">Femme</a></p>
+                </div>
+              </div>
+              <div class="row social">
+                <div class="twitter col-sm-4 col-xs-6">
+                  <a href="#" class='btn twitter'><span class='socicon'>a</span> Partager sur Twitter</a>
+                </div>
+                <div class="facebook col-sm-4 col-xs-6">
+                  <a href="#" class='btn facebook'><span class='socicon'>b</span> Partager sur Facebook</a>
+                </div>
+              </div>
+          </section>
+
+          <section class="salon-content">
+            <div class="row">
+              <div role="tabpanel">
+                <!-- Tabs - Nav -->
+                <div class="row">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active col-xs-4">
+                        <span class="icon-nav"></span>
+                        <a href="#informations" aria-controls="informations" role="tab" data-toggle="tab">informations</a>
+                      </li>
+                      <li role="presentation" class="col-xs-4">
+                        <span class="icon-nav"></span>
+                        <a href="#avis" aria-controls="avis" role="tab" data-toggle="tab">avis</a>
+                      </li>
+                      <li role="presentation" class="col-xs-4">
+                        <span class="icon-nav"></span>
+                        <a href="#hairfies" aria-controls="hairfies" role="tab" data-toggle="tab">Hairfies</a>
+                      </li>
+                    </ul>
+                </div>
+                <!-- Tabs -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="informations">
+                      <section>
+                        <h3>Nos Coiffeurs</h3>
+                        <div class="row">
+                          <div class="col-sm-3 col-xs-6 coiffeur">
+                            <a href="#"><img src="../images/placeholder-coiffeur.jpg" alt="coiffeur" /></a>
+                            <p><a href="#">Sam Gratte</a></p>
+                          </div>
+                          <div class="col-sm-3 col-xs-6 coiffeur">
+                            <a href="#"><img src="../images/placeholder-coiffeur.jpg" alt="coiffeur" /></a>
+                            <p><a href="#">Sam Chatouille</a></p>
+                          </div>
+                          <div class="col-sm-3 col-xs-6 coiffeur">
+                            <a href="#"><img src="../images/placeholder-coiffeur.jpg" alt="coiffeur" /></a>
+                            <p><a href="#">Sam Ennerve</a></p>
+                          </div>
+                          <div class="col-sm-3 col-xs-6 coiffeur">
+                            <a href="#"><img src="../images/placeholder-coiffeur.jpg" alt="coiffeur" /></a>
+                            <p><a href="#">Sam Amuse</a></p>
+                          </div>
+                        </div>
+                      </section>
+                      <section>
+                        <h3>Nos Prix</h3>
+                        <div class="row table-price">
+                          <div class="col-xs-6 col-sm-4">
+                            <p>coupe homme :&nbsp;<span>20€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>coupe homme :&nbsp;<span>20€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>coupe homme :&nbsp;<span>20€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>coupe homme :&nbsp;<span>20€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>coupe homme :&nbsp;<span>20€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>coupe homme :&nbsp;<span>20€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Défrisage :&nbsp;<span>60€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Lissage brésilien :&nbsp;<span>120€</span></p>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Défrisage :&nbsp;<span>60€</span></p>
+                          </div>
+                        </div>
+                      </section>
+                      <section>
+                        <h3>Nos Promotions</h3>
+                        <div class="row">
+                          <div class="col-xs-10 col-sm-12">
+                            <div class="promo">
+                              <h4>30% sur toutes les prestations et tous les achats dans le salon de coiffure</h4>
+                              <p>Cette offre n'est valable que pour les réservations en ligne. L'achat de produits du salon avec cette offre est exclusivement liée à une prestation. Du lundi au vendredi de 9h30 à 12h00.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section>
+                        <h3>Comment s'y rendre ?</h3>
+                        <h4>RER / Metro</h4>
+                        <p>Ligne 1 métro Vincennes</p>
+                        <h4>Bus</h4>
+                        <p>bus n° 21,24,27,39,48,68,69,72,81,95</p>
+                        <div class="map container-fluid">
+                          <!-- <img src="images/placeholder-map.jpg" alt=""  /> -->
+                        </div>
+                      </section>
+                      <section>
+                        <h3>Description du salon</h3>
+                        <h4>Titre 1</h4>
+                        <p>Bien installé au coeur du 16ème arrondissement, le salon de beauté Mario Lopes est incontournable ! Il se situe au milieu de l'Avenue Mozart.</p>
+                        <h4>Titre 2</h4>
+                        <p>Bien installé au coeur du 16ème arrondissement, le salon de beauté Mario Lopes est incontournable ! Il se situe au milieu de l'Avenue Mozart.</p>
+                        <h4>Titre 3</h4>
+                        <p>Bien installé au coeur du 16ème arrondissement, le salon de beauté Mario Lopes est incontournable ! Il se situe au milieu de l'Avenue Mozart.</p>
+                      </section>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="avis">
+                      <section>
+                        <h3>Avis</h3>  
+                      </section>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="hairfies">
+                      <section>
+                        <h3>Nos Hairfies</h3>
+                        <div class="salon-hairfies row">
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  pcoiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                        </div>
+                        <div class="salon-hairfies row">
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="col-md-3 single-hairfie">
+                              <figure>
+                                <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
+                                <figcaption>
+                                  coiffé par: <span>Nom</span>
+                                  où ? <span>Ici</span>
+                                </figcaption>
+                              </figure>
+                            </div>
+                        </div>
+                      </section>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+
+        <div class="sidebar col-sm-4">
+          <div class="phone">
+            <a href="phone:0140217343" class="btn btn-red">01 31 20 49 50</a>
+          </div>
+          <div class="calendar">
+            <table class="cal">
+              <caption>
+                <span class="prev"><a href="#"></a></span>
+                <span class="next"><a href="#"></a></span>
+                Mars 2015
+              </caption>
+              <thead>
+                <tr>
+                  <th>Lu</th>
+                  <th>Ma</th>
+                  <th>Me</th>
+                  <th>Je</th>
+                  <th>Ve</th>
+                  <th>Sa</th>
+                  <th>Di</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="off"><a href="#">26</a></td>
+                  <td class="off"><a href="#">27</a></td>
+                  <td class="off"><a href="#">28</a></td>
+                  <td class="off"><a href="#">29</a></td>
+                  <td class="off"><a href="#">30</a></td>
+                  <td class="off"><a href="#">31</a></td>
+                  <td><a href="#">1</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">2</a></td>
+                  <td><a href="#">3</a></td>
+                  <td><a href="#">4</a></td>
+                  <td><a href="#">5</a></td>
+                  <td><a href="#">6</a></td>
+                  <td><a href="#">7</a></td>
+                  <td><a href="#">8</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">9</a></td>
+                  <td><a href="#">10</a></td>
+                  <td><a href="#">11</a></td>
+                  <td><a href="#">12</a></td>
+                  <td><a href="#">13</a></td>
+                  <td><a href="#">14</a></td>
+                  <td><a href="#">15</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">16</a></td>
+                  <td><a href="#">17</a></td>
+                  <td><a href="#">18</a></td>
+                  <td><a href="#">19</a></td>
+                  <td><a href="#">20</a></td>
+                  <td><a href="#">21</a></td>
+                  <td><a href="#">22</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">23</a></td>
+                  <td><a href="#">24</a></td>
+                  <td><a href="#">25</a></td>
+                  <td><a href="#">26</a></td>
+                  <td><a href="#">27</a></td>
+                  <td class="active"><a href="#">28</a></td>
+                  <td><a href="#">29</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">30</a></td>
+                  <td><a href="#">31</a></td>
+                  <td class="off"><a href="#">1</a></td>
+                  <td class="off"><a href="#">2</a></td>
+                  <td class="off"><a href="#">3</a></td>
+                  <td class="off"><a href="#">4</a></td>
+                  <td class="off"><a href="#">5</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="promo-sidebar">
+            <p class='inline-promo'><span class="icon-promo">%</span>&nbsp;30% dans tout le salon*</p>
+            <a href="#" class="btn btn-red">réserver maintenant</a>
+          </div>
+          <div class="related-content">
+            <h5>Les coiffeur similaires</h5>
+            <section class="rival">
+              <div class="row">
+                <a href="#" class='col-xs-4'><img src="images/placeholder-related.jpg" alt="Related salon"/></a>
+                <a href="#" class='col-xs-8'>
+                  <span>Alexandre de Paris</span>
+                  1 rue Vivienne, 75001, Paris
+                </a>
+                <p><span class="icon-promo">%</span>-30% dans tout le salon*</p>
+                <p>Prix moyen 50€</p>
+              </div>
+            </section>
+            <section class="rival">
+              <div class="row">
+                <a href="#" class='col-xs-4'><img src="images/placeholder-related.jpg" alt="Related salon"/></a>
+                <a href="#" class='col-xs-8'>
+                  <span>Alexandre de Paris</span>
+                  1 rue Vivienne, 75001, Paris
+                </a>
+                <p><span class="icon-promo">%</span>-30% dans tout le salon*</p>
+                <p>Prix moyen 50€</p>
+              </div>
+            </section>
+            <section class="rival">
+              <div class="row">
+                <a href="#" class='col-xs-4'><img src="images/placeholder-related.jpg" alt="Related salon"/></a>
+                <a href="#" class='col-xs-8'>
+                  <span>Alexandre de Paris</span>
+                  1 rue Vivienne, 75001, Paris
+                </a>
+                <p><span class="icon-promo">%</span>-30% dans tout le salon*</p>
+                <p>Prix moyen 50€</p>
+              </div>
+            </section>
+          </div>
+          <div class="networks">
+            <p>Suivez-nous :</p>
+            <ul class="social-links">
+              <li><a href="#" class='icon'>b</a></li>
+              <li><a href="#" class='icon'>a</a></li>
+              <li><a href="#" class='icon'>c</a></li>
+              <li><a href="#" class='icon'>x</a></li>
+              <li><a href="#" class='icon'>d</a></li>
+            </ul>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <ul class="footer-links col-md-7">
+            <li class="col-sm-2"><a href="#">À propos</a></li>
+            <li class="col-sm-2"><a href="#">Presse</a></li>
+            <li class="col-sm-2"><a href="#">Blog</a></li>
+            <li class="col-sm-4"><a href="#">Conditions Générales</a></li>
+            <li class="col-sm-2"><a href="#" class="btn btn-red">Déclarez votre salon</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="hr col-sm-10 col-xs-10"></div>
+        </div>
+        <h4>Rejoignez-nous sur :</h4>
+        <div class="row">
+          <ul class="social-links col-md-3">
+            <li><a href="#" class='icon'>b</a></li>
+            <li><a href="#" class='icon'>a</a></li>
+            <li><a href="#" class='icon'>c</a></li>
+            <li><a href="#" class='icon'>x</a></li>
+            <li><a href="#" class='icon'>d</a></li>
+          </ul>
+        </div>
+        <p>© Hairfie, Inc.</p> 
+      </div>
+    </footer>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+
+        <!-- build:js scripts/main.js -->
+        <script src="bower_components/jquery/jquery.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/hello.js"></script>
+        <!-- endbuild -->
+    
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $('#carousel-salon').carousel();
+      });
+    </script>
+        <!-- build:js scripts/vendor/bootstrap.js 
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+         endbuild -->
+</body>
+</html>
